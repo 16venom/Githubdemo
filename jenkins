@@ -1,10 +1,10 @@
 pipeline{
-    agent any
-    stages {
-  stage('maven') {
+     agent any
+     stages {
+  stage('maven ') {
     steps {
       withMaven(globalMavenSettingsConfig: '', jdk: '', maven: '', mavenSettingsConfig: '', traceability: true) {
-  sh'mvn clean install'
+    sh'mvn clean install'
 }
     }
   }
@@ -12,3 +12,4 @@ pipeline{
 }
 
 }
+
